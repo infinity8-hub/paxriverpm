@@ -1,0 +1,11 @@
+.icon-color-3183B7,
+.icon-color-3183B7 img {
+    filter: brightness(0);
+    transition: filter 0.5s ease;
+}
+
+.group:hover .icon-color-3183B7,
+.group:hover .icon-color-3183B7 img {
+    filter: brightness(0) invert(1);
+}
+

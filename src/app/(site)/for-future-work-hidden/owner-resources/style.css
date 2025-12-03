@@ -1,0 +1,75 @@
+/* Page Container */
+.page-container {
+  @apply bg-white text-black min-h-[80vh] py-16;
+}
+
+.content-wrapper {
+  @apply max-w-[90%] mx-auto px-7 sm:px-10 lg:px-9;
+}
+
+/* Heading */
+.page-heading {
+  @apply text-[28px] md:text-[34px] lg:text-[42px] italic font-medium text-black leading-tight mb-8 text-left;
+}
+
+/* Container Grid */
+.container-grid {
+  @apply flex flex-col sm:flex-row sm:flex-wrap justify-evenly items-center gap-9;
+}
+
+/* Resource Card */
+.resource-card {
+  @apply border-2 border-black rounded-3xl p-8 flex flex-col items-center justify-between min-h-[280px] hover:border-transparent hover:bg-primary-lightBlue transition-all duration-500 ease-in-out cursor-pointer w-full sm:w-[calc(50%-18px)] md:w-[calc(33.333%-24px)] lg:w-[calc(25%-27px)] lg:h-[280px] xl:w-[calc(20%-28.8px)] hover:scale-105;
+  border-radius: 1.5rem;
+}
+
+.resource-card:hover {
+  border-radius: 1.5rem;
+}
+
+.card-content {
+  @apply flex flex-col items-center flex-grow justify-center;
+}
+
+.card-icon-wrapper {
+  @apply relative w-8 h-8 transition-transform duration-500 ease-out;
+}
+
+.resource-card.group:hover .card-icon-wrapper {
+  transform: scale(1.25) !important;
+}
+
+.card-text-wrapper {
+  @apply my-5 text-center;
+}
+
+.card-icon-wrapper > div {
+  @apply w-full h-full;
+}
+
+.card-text {
+  @apply text-black text-xl font-semibold text-center transition-transform duration-500 ease-out inline-block;
+  transform-origin: center;
+}
+
+.resource-card.group:hover .card-text {
+  transform: scale(1.1) !important;
+  color: white !important;
+}
+
+.card-arrow {
+  @apply transition-transform duration-500 ease-out;
+}
+
+
+.icon-color-3183B7,
+.icon-color-3183B7 img {
+  filter: brightness(0);
+  transition: filter 0.5s ease;
+}
+
+.resource-card.group:hover .icon-color-3183B7,
+.resource-card.group:hover .icon-color-3183B7 img {
+  filter: brightness(0) invert(1);
+}
+

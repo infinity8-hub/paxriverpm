@@ -1,0 +1,267 @@
+:root {
+    --accent-color: #ef4444;
+    --accent-hover: #dc2626;
+}
+
+.proposal-form input,
+.proposal-form textarea,
+.proposal-form select {
+    color: black !important;
+}
+
+.proposal-form input::placeholder,
+.proposal-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 1px solid #000;
+    background-color: white;
+    color: black !important;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #000;
+    border-color: #000;
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-label {
+    display: block;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 1px solid #000;
+    background-color: white;
+    color: black !important;
+    resize: none;
+}
+
+.form-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #000;
+    border-color: #000;
+}
+
+.form-textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 1px solid #000;
+    background-color: white;
+    color: black !important;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #000;
+    border-color: #000;
+}
+
+.form-select option {
+    background-color: white;
+    color: black;
+}
+
+.form-select option:checked,
+.form-select option:focus {
+    background-color: #000;
+    color: white;
+}
+
+/* Remove blue selection/highlight colors */
+.form-input::selection,
+.form-textarea::selection,
+.form-select::selection {
+    background-color: #000;
+    color: white;
+}
+
+.form-input::-moz-selection,
+.form-textarea::-moz-selection,
+.form-select::-moz-selection {
+    background-color: #000;
+    color: white;
+}
+
+.form-error {
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.form-asterisk {
+    color: var(--accent-color);
+}
+
+.form-input-error,
+.form-textarea-error,
+.form-select-error {
+    border-color: var(--accent-color) !important;
+}
+
+.form-submit-btn {
+    background-color: #3183B7;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+    background-color: #005D8F;
+}
+
+.form-submit-btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+    background-color: #9ca3af;
+}
+
+.form-radio {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.form-radio:checked {
+    border-color: #000;
+    background-color: transparent;
+}
+
+.form-radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.form-radio:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+/* React DatePicker Styles */
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+.react-datepicker__input-container input {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 1px solid #000;
+    background-color: white;
+    color: black !important;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.react-datepicker__input-container input::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-datepicker__input-container input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #000;
+    border-color: #000;
+}
+
+.react-datepicker {
+    font-family: inherit;
+    border: 1px solid #aeaeae;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.react-datepicker__header {
+    background-color: #3183B7;
+    border-bottom: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-top: 0.75rem;
+}
+
+.react-datepicker__current-month {
+    color: white;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.react-datepicker__day-name {
+    color: white;
+    font-weight: 600;
+}
+
+.react-datepicker__day {
+    color: #000;
+}
+
+.react-datepicker__day:hover {
+    background-color: rgba(49, 131, 183, 0.2);
+    border-radius: 0.25rem;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #3183B7;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--keyboard-selected:hover {
+    background-color: #005D8F;
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: white;
+}
+
+.react-datepicker__triangle {
+    display: none;
+}
+
+/* Toast Notification Styles */
+.Toastify__toast {
+    min-width: 400px !important;
+    max-width: 500px !important;
+}
+
+@media (max-width: 480px) {
+    .Toastify__toast {
+        min-width: 90% !important;
+        max-width: 90% !important;
+    }
+}
+
